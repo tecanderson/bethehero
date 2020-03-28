@@ -16,28 +16,25 @@ module.exports = {
         ,'ongs.whatsapp'
         ,'ongs.city'
         ,'ongs.uf']);
-        //.where("ong_id",ong_id);
         
         response.header("X-Total-Count",count['count(*)']);
         return response.json(incidents);
     },
     async create(request,response) {
         const {title,description,value} = request.body;
-        const ong_id = request.headers.Authorization;
-        console.log(ong_id);
+        const ong_id = request.headers.authorization;
         const [id] = await connection("incidents").insert({
             title,
             description,
             value,
-            ong_id,
+            ong_id 
         });
         //console.log(data);
         return response.json({id});
         },
         async delete(request,response) { 
             const {id} = request.params;
-            const ong_id = request.headers.Authorization;
-            console.log(ong_id);
+            const ong_id = request.headers.authorization;
             const incidents = await connection("incidents")
             .where("id",id)
             .select("ong_id")

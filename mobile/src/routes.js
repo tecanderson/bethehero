@@ -3,7 +3,6 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import Incidents from './pages/Incidents';
 import Detail from './pages/Detail';
-
 const AppStack = createStackNavigator();
 
 

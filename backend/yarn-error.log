@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add @axios
+
+PATH: 
+  /home/anderson/.local/bin:/home/anderson/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/var/lib/snapd/snap/bin:/home/anderson/development/flutter/bin:/bin/usr/lib/jvm/jdk-11/bin:/home/anderson/Android/Sdk/tools :/home/anderson/Android/Sdk/platform-tools:/home/anderson/development/flutter/bin:/bin/usr/lib/jvm/jdk-11/bin:/home/anderson/Android/Sdk/tools :/home/anderson/Android/Sdk/platform-tools:/home/anderson/development/flutter/bin:/bin/usr/lib/jvm/jdk-11/bin:/home/anderson/Android/Sdk/tools :/home/anderson/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@axios: Request "https://registry.yarnpkg.com/@axios" returned a 405
+      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:66996:18)
+      at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140748:22)
+      at Request.emit (events.js:311:20)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141720:10)
+      at Request.emit (events.js:311:20)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:417:28)
+      at IncomingMessage.emit (events.js:323:22)
+      at endReadableNT (_stream_readable.js:1204:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "nodemon ./src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "knex": "^0.20.13",
+      "sqlite3": "^4.1.1"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -22,7 +22,7 @@ npm run start
 After build your changes, you may use the `build` command to install it on your cellphone.
 
 ```
-npm run-anroid or npm run-ios
+npm run anroid or npm run ios
 ```
 
 Finally, the `publish` script starts your Expo "building server" on port [expo.io](http://expo.io).

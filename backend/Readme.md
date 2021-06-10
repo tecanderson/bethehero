@@ -25,10 +25,10 @@ After building your database, you may use the `db:seed` command to seed it.
 npm run db:seed
 ```
 
-Finally, the `serve` script starts your Node.js "development server" on port 8000.
+Finally, the `serve` script starts your Node.js "development server" on port 3333.
 
 ```
-npm run serve
+npm run start
 ```
 
 That’s it! :rocket:  
